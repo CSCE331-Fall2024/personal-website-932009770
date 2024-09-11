@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zachary Shewbart Homepage</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zachary Shewbart Homepage</title>
+        <link id="themeStylesheet" rel="stylesheet" href="styles.css">
+    </head>
 
 <body> 
+    
     <div id="popup-overlay" class="popup-overlay">
         <div id="popup" class="popup">
             <p>Welcome to my webpage!</p>
             <p>Navigate with WASD or click the icons to travel to other pages</p>
-            <p>Spawn in a barrier? Press R to repawn on mouse position</p>
+            <p>Stuck in a barrier? Press R to repawn on mouse position</p>
             <p>Shift to dash!</p>
             <button id="close-popup" class="close-popup">Close</button>
         </div>
@@ -40,7 +41,13 @@
             }
         });
     </script>
-    
+
+    <button id="switchStyleBtn" class="switch-style-btn">Switch to Accessibility Mode</button>
+        
+    <div class="profile-icon">
+        <img src="images/me.jpg" alt="Profile Picture">
+    </div>
+
     <div id="game-container">
         <div id="player"></div>
     
